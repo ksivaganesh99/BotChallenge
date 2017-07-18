@@ -43,7 +43,8 @@ I assume you have the Slack and LEX integration ready and able to communicate. N
 
 1. AWS unstopped resource notifier:
 
-Create an event rule in CloudWatch to trigger a Lambda function every day at some time. This Lambda function reads the running instances from all the regions and send them to Slack team using incoming webhook URL you saved before.
+Setup an APi Gateway whcih points to another Lambda function. You can get the code at https://github.com/ksivaganesh99/SlackLambda.git.  This Lambda function reads the running instances from all the regions and send them to Slack team using incoming webhook URL you saved before. 
+Create an event rule in CloudWatch to trigger a Lambda function every day at some time. 
 Ping from the Lambda function contains buttons whose actions are posted to interative webhoot URL. One point to mention we should have an API gateway configured to the same Lambda function whose endpoint url is used to tackle interactive messages.
 While configuring API gateway important point is, In integration request give body template as :
 																Content Type : application/x-www-form-urlencoded
@@ -67,12 +68,4 @@ Run 'npm install' command  after opening the code. Zip it and upload it to Lambd
 
 
 
-
-
-
-
-
-
-
-
-<a href="https://slack.com/oauth/authorize?&client_id=71311666592.171951787604&scope=bot,chat:write:bot,channels:history,groups:history,im:history,mpim:history,incoming-webhook,commands,chat:write:user"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+To test the bot send me an invite to join the team. Right now due to some restrictions not able to distrubute my app to public. Drop me a mail to me to add to my team to test the bot.
