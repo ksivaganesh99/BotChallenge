@@ -68,4 +68,4 @@ Run 'npm install' command  after opening the code. Zip it and upload it to Lambd
 
 
 
-To test the bot send me an invite to join the team. Right now due to some restrictions not able to distrubute my app to public. Drop me a mail to me to add to my team to test the bot.
+To test the bot send me an invite to join the team. Right now due to some restrictions not able to distrubute my app to public. Drop me a mail to me to add to the team to test the bot.
