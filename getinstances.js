@@ -111,7 +111,7 @@ eventEmitter.on("updateregion",getInstancesByregion);
 
               
    
-            console.log("asdkaldjoj");
+
          responsemessgae = {"text":"There are total "+payloadopt.length+" running instancecs.\n Please stop them if not in use","attachments":payloadopt};
        
         resolve(responsemessgae);
