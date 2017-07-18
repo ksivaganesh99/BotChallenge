@@ -43,7 +43,7 @@ I assume you have the Slack and LEX integration ready and able to communicate. N
 
 1. AWS unstopped resource notifier:
 
-Setup an APi Gateway whcih points to another Lambda function. You can get the code at https://github.com/ksivaganesh99/SlackLambda.git.  This Lambda function reads the running instances from all the regions and send them to Slack team using incoming webhook URL you saved before. 
+Setup an API Gateway whcih points to another Lambda function. You can get the code at https://github.com/ksivaganesh99/SlackLambda.git.  This Lambda function reads the running instances from all the regions and send them to Slack team using incoming webhook URL you saved before. 
 Create an event rule in CloudWatch to trigger a Lambda function every day at some time. 
 Ping from the Lambda function contains buttons whose actions are posted to interative webhoot URL. One point to mention we should have an API gateway configured to the same Lambda function whose endpoint url is used to tackle interactive messages.
 While configuring API gateway important point is, In integration request give body template as :
